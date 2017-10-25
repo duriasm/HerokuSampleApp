@@ -1,1 +1,3 @@
 # HerokuSampleApp
+
+Simple web application
