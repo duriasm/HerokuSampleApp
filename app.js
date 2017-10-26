@@ -14,12 +14,6 @@ app.get('/', function (req, res) {
 app.use('/home', index);
 app.use('/button', button);
 
-//var server = app.listen(8080, function () {
-   var host = server.address().address
-   var port = server.address().port
-   
-   console.log("App running.")
-//})
 
 app.listen(app.get('port'), function() {
   console.log("App running");
