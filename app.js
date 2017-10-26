@@ -4,6 +4,7 @@ var route = require('./routes')
 , button = require('./routes/button');
 
 var app = express();
+var port = process.env.PORT;
 
 app.get('/', function (req, res) {
    res.redirect('/home');
@@ -12,9 +13,7 @@ app.get('/', function (req, res) {
 app.use('/home', index);
 app.use('/button', button);
 
-var server = app.listen(8080, function () {
-   var host = server.address().address
-   var port = server.address().port
+var server = app.listen(port, function () {
    
    console.log("App running.")
 })
